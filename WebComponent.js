@@ -12,8 +12,8 @@
 
         init() {            
 	     console.log("In init...");   
-            let shadowRoot = this.attachShadow({mode: "open"});
-            shadowRoot.appendChild(tmpl.content.cloneNode(true));
+            this._shadowRoot = this.attachShadow({mode: "open"});
+            this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
                  
         }
 
@@ -23,7 +23,7 @@
     
     function draw() {
 	    		console.log("In draw...");   
-			const canvas = shadowRoot.querySelector('#canvas');
+			const canvas = this._shadowRoot.querySelector('#canvas');
 			
 			if(!canvas.getContext){
 				console.log("No Context...returning");
