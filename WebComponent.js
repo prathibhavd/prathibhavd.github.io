@@ -21,9 +21,9 @@
         
     }
     
-    function draw() {/*
+    function draw() {
 	    		console.log("In draw...");   
-			const canvas = this._shadowRoot.querySelector('#canvas');
+			const canvas = this._shadowRoot.querySelector('#custom-button');
 			
 			if(!canvas.getContext){
 				console.log("No Context...returning");
@@ -32,7 +32,7 @@
 			}
 			
 			const ctx = canvas.getContext('2d');
-			
+			/*
 			var projectedval = 10000;
 			var currentval = 5000;
 			
