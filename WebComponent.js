@@ -1,7 +1,7 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<button type="button" id="myBtn">Helper Button</button>` ;   
+    `<label for="ProjectedValue">Projected Value</label>` ;   
    
     class PerformanceHelp extends HTMLElement {
         constructor() {
@@ -13,17 +13,10 @@
               
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            this.addEventListener("click", event => {
-            var event = new Event("onClick");
-            this.fireChanged();           
-            this.dispatchEvent(event);
-            });           
+                 
         }
 
-        fireChanged() {
-            console.log("OnClick Triggered");     
-            
-        }        
+     
         
     }
 
