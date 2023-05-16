@@ -1,7 +1,8 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<label for="ProjectedValue">Glass Chart</label>` ;   
+    `<label for="ProjectedValue">Glass Chart</label>
+    <canvas id="mycanvas" height="400" width="600"></canvas>` ;   
    
     class PerformanceHelp extends HTMLElement {
         constructor() {
@@ -22,9 +23,11 @@
     }
     
     function draw() {   
-	    		var c = document.getElementsByClassName("sapCustomWidgetWebComponent");
+	    		var c = document.getElementById("mycanvas");
 			
 	    		var ctx = c.getContext("2d");
+	    		ctx.lineWidth = 3;
+			ctx.strokeStyle = '#488CCC';
 			ctx.beginPath();
 			ctx.moveTo(0, 0);
 			ctx.lineTo(300, 150);
