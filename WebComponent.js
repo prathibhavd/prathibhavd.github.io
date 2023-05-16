@@ -22,15 +22,15 @@
     }
     
     function draw() {   
-	    		var c = document.getElementById("custom-button");
-			/*
+	    		var c = document.getElementsByClassName("sapCustomWidgetWebComponent");
+			
 	    		var ctx = c.getContext("2d");
 			ctx.beginPath();
 			ctx.moveTo(0, 0);
 			ctx.lineTo(300, 150);
 			ctx.stroke();
 	    		
-	    		
+	    		/*
 	    		console.log("In draw...");   
 			const canvas = this._shadowRoot.querySelector('sapCustomWidget');
 			
