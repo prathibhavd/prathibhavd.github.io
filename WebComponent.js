@@ -1,28 +1,31 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    ` <label for="ProjectedValue">Projected Value</label>` ; 
-  
-    class GlassChartWebComponent extends HTMLElement {
+    `<button type="button" id="myBtn">Helper Button</button>` ;   
+   
+    class PerformanceHelp extends HTMLElement {
         constructor() {
             super();
-            this.init();    
+            this.init();           
         }
-		
-		connectedCallback() {
-		
-		}
 
         init() {            
               
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(tmpl.content.cloneNode(true));
-		          
+            this.addEventListener("click", event => {
+            var event = new Event("onClick");
+            this.fireChanged();           
+            this.dispatchEvent(event);
+            });           
         }
 
-  	
+        fireChanged() {
+            console.log("OnClick Triggered");     
+            
+        }        
         
-    }			
-		
-    customElements.define('glasschart-webcomponent', GlassChartWebComponent);
+    }
+
+    customElements.define('custom-button', PerformanceHelp);
 })();
