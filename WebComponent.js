@@ -20,7 +20,7 @@
               
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(tmpl.content.cloneNode(true));
-			draw();
+			//draw();
             /*this.addEventListener("click", event => {
             var event = new Event("onClick");
             this.fireChanged();           
