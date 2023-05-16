@@ -7,7 +7,7 @@
         constructor() {
             super();
             this.init(); 
-            draw();
+            //draw();
         }
 
         init() {            
@@ -21,7 +21,7 @@
         
     }
     
-    function draw() {
+    function draw() {/*
 	    		console.log("In draw...");   
 			const canvas = this._shadowRoot.querySelector('#canvas');
 			
@@ -98,6 +98,7 @@
 			ctx.moveTo(startPointX +(endPointX - startPointX)/fillpercent,startPointY + (endPointY-startPointY)/fillpercent);
 			ctx.lineTo(endPointY + (startPointY + galssBaseWidth - endPointY)/fillpercent,startPointX + (endPointY - startPointX)/fillpercent);
 			ctx.stroke();
+			*/
 		}
 
     customElements.define('custom-button', PerformanceHelp);
