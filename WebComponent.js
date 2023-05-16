@@ -1,10 +1,7 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    ` <label for="ProjectedValue">Projected Value</label>
-	<input type="input" id="Val1"></input>
-	<label for="CurrentValue">Current Value</label>
-	<input type="input" id="Val2"></input>` ; 
+    ` <label for="ProjectedValue">Projected Value</label>` ; 
   
     class GlassChartWebComponent extends HTMLElement {
         constructor() {
