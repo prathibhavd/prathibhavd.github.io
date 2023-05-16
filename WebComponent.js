@@ -11,7 +11,7 @@
         }
 
         init() {            
-              
+            Console.log("In init..");  
             let shadowRoot = this.attachShadow({mode: "open"});
             shadowRoot.appendChild(tmpl.content.cloneNode(true));
                  
@@ -22,6 +22,8 @@
     }
     
     function draw() {
+	    
+	    		Console.log("In draw.."); 
 			const canvas = document.querySelector('#canvas');
 			
 			if(!canvas.getContext){
