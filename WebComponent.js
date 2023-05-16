@@ -1,13 +1,13 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<label for="ProjectedValue"Glass Chart</label>` ;   
+    `<label for="ProjectedValue">Glass Chart</label>` ;   
    
     class PerformanceHelp extends HTMLElement {
         constructor() {
             super();
             this.init(); 
-            //draw();
+            draw();
         }
 
         init() {            
