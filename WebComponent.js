@@ -8,7 +8,7 @@
         constructor() {
             super();
             this.init(); 
-            draw();
+            
         }
 
         init() {            
@@ -18,7 +18,10 @@
                  
         }
 
-     
+      connectedCallback() {
+            console.log("In connectedCallback..."); 
+	    draw();
+        }
         
     }
     
