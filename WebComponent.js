@@ -49,7 +49,7 @@
 			var currentval = 5000;
 			
 			ctx.lineWidth = 3;
-			ctx.strokeStyle = '#488CCC';
+			ctx.strokeStyle = '488CCC';
 			
 			var glassSideLength = 300;
 			var galssBaseWidth = 250;
@@ -84,7 +84,7 @@
 			
 			var fillpercent = projectedval / currentval;
 			
-			ctx.strokeStyle = '#488CCC';
+			ctx.strokeStyle = '488CCC';
 			ctx.lineWidth = 3;
 			
 			//inside glass left line
