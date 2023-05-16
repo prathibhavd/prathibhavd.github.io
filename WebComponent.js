@@ -21,9 +21,9 @@
         
     }
     
-    function draw() {
+    function draw() {   
 	    		console.log("In draw...");   
-			const canvas = this._shadowRoot.querySelector('#custom-button');
+			const canvas = this._shadowRoot.querySelector('sapCustomWidget');
 			
 			if(!canvas.getContext){
 				console.log("No Context...returning");
