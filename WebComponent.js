@@ -23,7 +23,7 @@
     }
     
     function draw() {   
-	    		var c = document.getElementById("mycanvas");
+	    		var c = this._shadowRoot.getElementById("mycanvas");
 			
 	    		var ctx = c.getContext("2d");
 	    		ctx.lineWidth = 3;
