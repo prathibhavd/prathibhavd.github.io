@@ -23,7 +23,7 @@
     
     function draw() {
 	    		console.log("In draw...");   
-			const canvas = document.querySelector('#canvas');
+			const canvas = this._shadowRoot.querySelector('#canvas');
 			
 			if(!canvas.getContext){
 				console.log("No Context...returning");
