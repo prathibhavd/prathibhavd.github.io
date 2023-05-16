@@ -32,7 +32,7 @@
 			}
 			
 			const ctx = canvas.getContext('2d');
-			/*
+			
 			var projectedval = 10000;
 			var currentval = 5000;
 			
@@ -98,7 +98,7 @@
 			ctx.moveTo(startPointX +(endPointX - startPointX)/fillpercent,startPointY + (endPointY-startPointY)/fillpercent);
 			ctx.lineTo(endPointY + (startPointY + galssBaseWidth - endPointY)/fillpercent,startPointX + (endPointY - startPointX)/fillpercent);
 			ctx.stroke();
-			*/
+			
 		}
 
     customElements.define('custom-button', PerformanceHelp);
