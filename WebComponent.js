@@ -101,5 +101,5 @@
 			*/
 		}
 
-    customElements.define('pv-glasschart', PerformanceHelp);
+    customElements.define('custom-button', PerformanceHelp);
 })();
