@@ -1,6 +1,6 @@
 {
 	"name": "pvcustomwidget",
-	"description": "Hello World",
+	"description": "PV Custom Widget",
 	"newInstancePrefix": "pvcustomwidget",
 	"eula": "",
 	"vendor": "PrathibhaVadugu",
