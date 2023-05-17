@@ -14,14 +14,14 @@
 	     console.log("In init...");   
             this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            var width = document.getElementsByTagName('custom-glasschart')[0]. style. width;
-	    var height = document.getElementsByTagName('custom-glasschart')[0]. style. height;     
-	    console.log("width = " + width + " height = " + height); 
+            
         }
 
       connectedCallback() {
             console.log("In connectedCallback..."); 
-	    
+	    var width = document.getElementsByTagName('custom-glasschart')[0]. style. width;
+	    var height = document.getElementsByTagName('custom-glasschart')[0]. style. height;     
+	    console.log("width = " + width + " height = " + height); 
         }
         
     }
