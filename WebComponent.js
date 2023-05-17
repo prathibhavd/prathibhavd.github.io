@@ -24,7 +24,7 @@
 	    console.log("element... " + element);
 	    var rect = element.getBoundingClientRect();
 	    console.log(rect.top, rect.right, rect.bottom, rect.left);
-	    linedraw(rect.top, rect.left, rect.bottom, rect.right);
+	    //linedraw(rect.top, rect.left, rect.bottom, rect.right);
 	    
 	    //var canvas = document.getElementById("mycanvasforchart");
         }
