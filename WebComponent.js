@@ -14,8 +14,8 @@
 	     console.log("In init...");   
             this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-            var width = document. getElementsByTagName('custom-glasschart')[0]. style. width;
-	    var height = document. getElementsByTagName('custom-glasschart')[0]. style. height;     
+            var width = this._shadowRoot.getElementsByTagName('custom-glasschart')[0]. style. width;
+	    var height = this._shadowRoot.getElementsByTagName('custom-glasschart')[0]. style. height;     
 	    console.log("width = " + width + " height = " + height); 
         }
 
