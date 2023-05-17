@@ -129,7 +129,7 @@
 			ctx.moveTo(startPointX +(endPointX - startPointX)/fillpercent,startPointY + (endPointY-startPointY)/fillpercent);
 			ctx.lineTo(endPointY + (startPointY + galssBaseWidth - endPointY)/fillpercent,startPointX + (endPointY - startPointX)/fillpercent);
 			ctx.stroke();
-			*/
+			
 		}
 
     customElements.define('custom-glasschart', GlassChart);
