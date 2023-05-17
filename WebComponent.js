@@ -2,8 +2,8 @@
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
     `<label id="glasschartheader">Glass Chart</label> <br/>
-    <label id="projectedvalue">Projected Value : </label>
-    <canvas id="mycanvasforchart" height="400" width="300"> </canvas>` ;   
+    <label id="projectedvalue">Projected Value : </label> <br/>
+    <canvas id="mycanvasforchart" height="300" width="200"> </canvas>` ;   
    
     class GlassChart extends HTMLElement {
         constructor() 
@@ -48,7 +48,7 @@
 	    		var rightX = rect.bottom;
 	    		var leftY = rect.left;
 			    
-	    
+	    		console.log("leftX = " + leftX + "leftY = " + leftY + "rightX = " + rightX + "rightY = " + rightY);
 			if(!canvas.getContext){
 				console.log("No Context...returning");
 				return;
