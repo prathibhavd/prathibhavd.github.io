@@ -3,7 +3,7 @@
     tmpl.innerHTML = 
     `<label id="glasschartheader">Glass Chart</label> <br/>
     <label id="projectedvalue">Projected Value : </label>
-    <canvas id="mycanvasforchart" height="200" width="200"> </canvas>` ;   
+    <canvas id="mycanvasforchart" height="400" width="300"> </canvas>` ;   
    
     class GlassChart extends HTMLElement {
         constructor() 
@@ -23,13 +23,14 @@
 	    {
             console.log("In connectedCallback..."); 
 	    const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
-
-	    		var rect = canvas.getBoundingClientRect();
-	    		console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
-			var leftX = rect.top;
-	    		var rightY = rect.right;
-	    		var rightX = rect.bottom;
-	    		var leftY = rect.left;
+            /*
+	    var rect = canvas.getBoundingClientRect();
+	    console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
+	    var leftX = rect.top;
+	    var rightY = rect.right;
+	    var rightX = rect.bottom;
+	    var leftY = rect.left;
+	    */
 	    draw(canvas);
 	    }
 	    
@@ -74,7 +75,7 @@
 			ctx.moveTo(startPointX,startPointY);
 			ctx.lineTo(endPointX,endPointY);
 			ctx.stroke();
-			
+			/*
 			//glass right line
 			ctx.beginPath();
 			ctx.moveTo(endPointY,startPointX);
@@ -121,7 +122,7 @@
 			ctx.moveTo(startPointX +(endPointX - startPointX)/fillpercent,startPointY + (endPointY-startPointY)/fillpercent);
 			ctx.lineTo(endPointY + (startPointY + galssBaseWidth - endPointY)/fillpercent,startPointX + (endPointY - startPointX)/fillpercent);
 			ctx.stroke();
-			
+			*/
 		}
 	
     function linedraw(ax,ay,bx,by)
