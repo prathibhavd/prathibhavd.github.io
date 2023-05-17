@@ -1,10 +1,9 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<label for="ProjectedValue">Glass Chart</label>
-    <canvas id="mycanvas" height="400" width="600"></canvas>` ;   
+    `<label for="ProjectedValue">Glass Chart</label>` ;   
    
-    class PerformanceHelp extends HTMLElement {
+    class GlassChart extends HTMLElement {
         constructor() {
             super();
             this.init(); 
@@ -15,12 +14,14 @@
 	     console.log("In init...");   
             this._shadowRoot = this.attachShadow({mode: "open"});
             this._shadowRoot.appendChild(tmpl.content.cloneNode(true));
-                 
+            var width = document. getElementById('custom-glasschart'). style. width;
+	    var height = document. getElementById('custom-glasschart'). style. height;     
+	    console.log("width = " + width + " height = " + height); 
         }
 
       connectedCallback() {
             console.log("In connectedCallback..."); 
-	    linedraw(100,100,500,500);
+	    
         }
         
     }
@@ -134,5 +135,5 @@
 			*/
 		}
 
-    customElements.define('custom-button', PerformanceHelp);
+    customElements.define('custom-glasschart', GlassChart);
 })();
