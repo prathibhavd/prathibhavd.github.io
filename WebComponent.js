@@ -1,7 +1,8 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<label for="ProjectedValue">Glass Chart</label>` ;   
+    `<label for="ProjectedValue">Glass Chart</label>
+    <canvas id="mycanvasforchart" height="400" width="600"> </canvas>` ;   
    
     class GlassChart extends HTMLElement {
         constructor() {
@@ -24,6 +25,8 @@
 	    var rect = element.getBoundingClientRect();
 	    console.log(rect.top, rect.right, rect.bottom, rect.left);
 	    linedraw(rect.top, rect.left, rect.bottom, rect.right);
+	    
+	    var canvas = document.getElementById("mycanvasforchart");
         }
         
     }
