@@ -19,10 +19,10 @@
 
       connectedCallback() {
             console.log("In connectedCallback..."); 
-	    var width = document.getElementsByTagName('custom-glasschart')[0]. style. width;
-	    var height = document.getElementsByTagName('custom-glasschart')[0]. style. height;  
-	    console.log("element.." + document.getElementsByTagName('custom-glasschart')[0]);
-	    console.log("width = " + width + " height = " + height); 
+	    var element =   document.getElementsByTagName('custom-glasschart')[0];
+	    console.log("element... " + element);
+	    var rect = element.getBoundingClientRect();
+	    console.log(rect.top, rect.right, rect.bottom, rect.left);
         }
         
     }
