@@ -22,14 +22,23 @@
       connectedCallback() 
 	    {
             console.log("In connectedCallback..."); 
-	    draw();
+	    const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
+
+	    		var rect = canvas.getBoundingClientRect();
+	    		console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
+			var leftX = rect.top;
+	    		var rightY = rect.right;
+	    		var rightX = rect.bottom;
+	    		var leftY = rect.left;
+	    draw(canvas);
 	    }
 	    
-	    function draw() 
+    }
+	    function draw(var canvas) 
 	    {   
 	    				
 	    		console.log("In draw...");   
-			const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
+			//const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
 
 	    		var rect = canvas.getBoundingClientRect();
 	    		console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
@@ -114,9 +123,6 @@
 			ctx.stroke();
 			
 		}
-
-        
-    }
 	
     function linedraw(ax,ay,bx,by)
 	{
