@@ -26,7 +26,7 @@
 	    console.log(rect.top, rect.right, rect.bottom, rect.left);
 	    linedraw(rect.top, rect.left, rect.bottom, rect.right);
 	    
-	    var canvas = document.getElementById("mycanvasforchart");
+	    //var canvas = document.getElementById("mycanvasforchart");
         }
         
     }
