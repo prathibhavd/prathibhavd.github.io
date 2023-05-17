@@ -3,7 +3,7 @@
     tmpl.innerHTML = 
     `<label id="glasschartheader">Glass Chart</label> <br/>
     <label id="projectedvalue">Projected Value : </label>
-    <canvas id="mycanvasforchart" height="400" width="400"> </canvas>` ;   
+    <canvas id="mycanvasforchart" height="200" width="200"> </canvas>` ;   
    
     class GlassChart extends HTMLElement {
         constructor() {
