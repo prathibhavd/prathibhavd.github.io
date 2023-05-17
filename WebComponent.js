@@ -34,7 +34,7 @@
 	    }
 	    
     }
-	    function draw(var canvas) 
+	    function draw(canvas) 
 	    {   
 	    				
 	    		console.log("In draw...");   
