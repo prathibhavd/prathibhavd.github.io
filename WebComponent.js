@@ -3,7 +3,7 @@
     tmpl.innerHTML = 
     `<label id="glasschartheader">Glass Chart</label> <br/>
     <label id="projectedvalue">Projected Value : </label>
-    <canvas id="mycanvasforchart" height="100" width="100"> </canvas>` ;   
+    <canvas id="mycanvasforchart" height="400" width="400"> </canvas>` ;   
    
     class GlassChart extends HTMLElement {
         constructor() {
@@ -21,22 +21,8 @@
 
       connectedCallback() {
             console.log("In connectedCallback..."); 
-	    var element =   document.getElementsByTagName('custom-glasschart')[0];
-	    console.log("element... " + element);
-	    var rect = element.getBoundingClientRect();
-	    console.log(rect.top, rect.right, rect.bottom, rect.left);
-	    //linedraw(rect.top, rect.left, rect.bottom, rect.right);
-	    
-	    //var canvas = document.getElementById("mycanvasforchart");
-	      
-	    const label = this._shadowRoot.querySelector("#glasschartheader");
-	    console.log(label);
-	    const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
-	    console.log(canvas);
-	      
-	    var rect = canvas.getBoundingClientRect();
-	    console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
-        }
+	    draw();
+	    }
         
     }
 	
@@ -58,21 +44,18 @@
 	}
     
     function draw() {   
-	    		/*
-			var c = this._shadowRoot.getElementById("mycanvas");
-			
-	    		var ctx = c.getContext("2d");
-	    		ctx.lineWidth = 3;
-			ctx.strokeStyle = '#488CCC';
-			ctx.beginPath();
-			ctx.moveTo(0, 0);
-			ctx.lineTo(300, 150);
-			ctx.stroke();
-	    		
-	    		
+	    				
 	    		console.log("In draw...");   
-			const canvas = this._shadowRoot.querySelector('sapCustomWidget');
-			
+			const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
+
+	    		var rect = canvas.getBoundingClientRect();
+	    		console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
+			var leftX = rect.top;
+	    		var rightY = rect.right;
+	    		var rightX = rect.bottom;
+	    		var leftY = rect.left;
+			    
+	    
 			if(!canvas.getContext){
 				console.log("No Context...returning");
 				return;
@@ -89,10 +72,10 @@
 			
 			var glassSideLength = 300;
 			var galssBaseWidth = 250;
-			var startPointX = 100;
-			var startPointY = 100;
-			var endPointX = 150;
-			var endPointY = 400;
+			var startPointX = leftX;
+			var startPointY = leftY;
+			var endPointX = rightX;
+			var endPointY = rightY;
 			
 			//glass left line
 			ctx.beginPath();
