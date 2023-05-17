@@ -33,6 +33,9 @@
 	    console.log(label);
 	    const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
 	    console.log(canvas);
+	      
+	    var rect = canvas.getBoundingClientRect();
+	    console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
         }
         
     }
