@@ -30,7 +30,7 @@
 	    //var canvas = document.getElementById("mycanvasforchart");
 	      
 	    const label = this._shadowRoot.querySelector("#glasschartheader");
-	    console.log(canvas);
+	    console.log(label);
 	    const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
 	    console.log(canvas);
         }
