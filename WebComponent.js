@@ -68,10 +68,10 @@
 			
 			var glassSideLength = 100;
 			var galssBaseWidth = 50;
-			var startPointX = 200;
-			var startPointY = 100;
-			var endPointX = 300;
-			var endPointY = 200;
+			var startPointX = 0;
+			var startPointY = 0;
+			var endPointX = 200;
+			var endPointY = 300;
 			
 			//glass left line
 			ctx.beginPath();
