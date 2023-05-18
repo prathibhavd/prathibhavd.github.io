@@ -68,10 +68,10 @@
 			
 			var glassSideLength = 100;
 			var galssBaseWidth = 50;
-			var startPointX = leftX;
-			var startPointY = leftY;
-			var endPointX = rightX;
-			var endPointY = rightY;
+			var startPointX = 200;
+			var startPointY = 100;
+			var endPointX = 300;
+			var endPointY = 200;
 			
 			//glass left line
 			ctx.beginPath();
@@ -93,7 +93,7 @@
 			
 			//glass eclipse at top
 			ctx.beginPath();
-			ctx.ellipse(250, 100, 50, 150, Math.PI / 2, 0, 2 * Math.PI);
+			ctx.ellipse(200, 100, 50, 150, Math.PI / 2, 0, 2 * Math.PI);
 			ctx.strokeStyle = '#488CCC';
 			ctx.stroke();
 			
