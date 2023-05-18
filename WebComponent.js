@@ -6,7 +6,7 @@
     <input type="input" id="Val1"></input> <br/>
     <label for="CurrentValue">Current Value   : </label>
     <input type="input" id="Val2"></input> <br/>
-    <canvas id="mycanvasforchart" height="300" width="300"> </canvas>` ;   
+    <canvas id="mycanvasforchart" height="400" width="400"> </canvas>` ;   
    
     class GlassChart extends HTMLElement {
         constructor() 
@@ -26,14 +26,7 @@
 	    {
             console.log("In connectedCallback..."); 
 	    const canvas = this._shadowRoot.querySelector("#mycanvasforchart");
-            /*
-	    var rect = canvas.getBoundingClientRect();
-	    console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
-	    var leftX = rect.left;
-	    var rightX = rect.right;
-	    var rightY = rect.bottom;
-	    var leftY = rect.top;
-	    */
+
 	    draw(canvas);
 	    }
 	    
@@ -65,11 +58,19 @@
 			
 			ctx.lineWidth = 3;
 			ctx.strokeStyle = '#488CCC';
-			
-			var glassSideLength = 100;
-			var galssBaseWidth = 50;
-			var startPointX = 20;
-			var startPointY = 50;
+			/*
+		    	var glassSideLength = 300;
+			var galssBaseWidth = 250;
+			var startPointX = 100;
+			var startPointY = 100;
+			var endPointX = 150;
+			var endPointY = 400;
+		        */
+		    
+			var glassSideLength = 300;
+			var galssBaseWidth = 250;
+			var startPointX = 100;
+			var startPointY = 100;
 			var endPointX = 150;
 			var endPointY = 400;
 			
@@ -82,7 +83,7 @@
 			//glass right line
 			ctx.beginPath();
 			ctx.moveTo(endPointY,startPointX);
-			ctx.lineTo(startPointY + glassSideLength,endPointY);
+			ctx.lineTo(startPointY + galssBaseWidth,endPointY);
 			ctx.stroke();
 
 			//glass base line
