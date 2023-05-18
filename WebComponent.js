@@ -1,7 +1,7 @@
 (function () {
     let tmpl = document.createElement('template');
     tmpl.innerHTML = 
-    `<label id="glasschartheader">Glass Chart</label> <br/>
+    `<label id="glasschartheader" style="text-align:center;font-Weight:bold;">Glass Chart</label> <br/> <br/>
     <label id="projectedvalue">Projected Value : </label> 
     <input type="input" id="Val1"></input> <br/>
     <label for="CurrentValue">Current Value  : </label>
