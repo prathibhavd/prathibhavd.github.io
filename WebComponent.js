@@ -4,7 +4,7 @@
     `<label id="glasschartheader">Glass Chart</label> <br/>
     <label id="projectedvalue">Projected Value : </label> 
     <input type="input" id="Val1"></input> <br/>
-    <label for="CurrentValue">Current Value</label>
+    <label for="CurrentValue">Current Value  : </label>
     <input type="input" id="Val2"></input> <br/>
     <canvas id="mycanvasforchart" height="300" width="300"> </canvas>` ;   
    
