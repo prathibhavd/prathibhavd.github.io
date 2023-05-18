@@ -66,8 +66,8 @@
 			ctx.lineWidth = 3;
 			ctx.strokeStyle = '#488CCC';
 			
-			var glassSideLength = 300;
-			var galssBaseWidth = 250;
+			var glassSideLength = 100;
+			var galssBaseWidth = 50;
 			var startPointX = leftX;
 			var startPointY = leftY;
 			var endPointX = rightX;
