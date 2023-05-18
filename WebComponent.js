@@ -94,7 +94,7 @@
 			
 			//glass eclipse at top
 			ctx.beginPath();
-			ctx.ellipse(200, 100, 50, 150, Math.PI / 2, 0, 2 * Math.PI);
+			ctx.ellipse(250, 100, 50, 150, Math.PI / 2, 0, 2 * Math.PI);
 			ctx.strokeStyle = '#488CCC';
 			ctx.stroke();
 			
