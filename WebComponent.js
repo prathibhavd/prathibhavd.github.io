@@ -46,10 +46,10 @@
 
 	    		var rect = canvas.getBoundingClientRect();
 	    		console.log("canvas boundary rect..." + rect.top, rect.right, rect.bottom, rect.left);
-			var leftX = rect.top;
-	    		var rightY = rect.right;
-	    		var rightX = rect.bottom;
-	    		var leftY = rect.left;
+			var leftX = rect.left;
+	    		var rightX = rect.right;
+	    		var rightY = rect.bottom;
+	    		var leftY = rect.top;
 			    
 	    		console.log("leftX = " + leftX + "leftY = " + leftY + "rightX = " + rightX + "rightY = " + rightY);
 			if(!canvas.getContext)
